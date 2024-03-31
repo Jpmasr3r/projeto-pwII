@@ -1,0 +1,202 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 99vh;
+
+    background-color: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divLogin {
+    min-width: 50%;
+    min-height: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    border-radius: 15px;
+    color: #111;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#divLoginArea1 > * {
+    margin: 8%;
+}
+
+#divLoginArea1 > h1 {
+    position: relative;
+    left: -25%;
+    font-size: 300%;
+}
+
+#divLoginArea1 > label > b {
+    position: relative;
+    left: -40%;
+    font-size: 125%;
+}
+
+#divLoginArea1 > label > input {
+    width: 175%;
+    height: 25px;
+    position: relative;
+    left: -40%;
+    border-radius: 0px 15px 15px 0px;
+    border: 2px solid #444;
+    background-color: #111;
+    color: #fff;
+
+}
+
+#divLoginArea1 > label > input::placeholder {
+    color: #fff;
+}
+
+.lblInpLogin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#btnLogin, #btnCreate {
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid #444;
+    background-color: #111;
+    color: #fff;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#btnLogin:hover , #btnCreate:hover {
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #111;
+}
+
+#divLoginArea1, #divLoginArea2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+}
+
+#divLoginArea2 {
+    background-color: #dedede;
+}
+
+#lblLogo {
+    position: absolute;
+
+    width: 25%;
+    height: 25%;
+
+    left: -3%;
+    top: -2.5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#lblLogo > img {
+    transform: rotate(45deg);
+    width: 25%;
+    position: relative;
+    bottom: 15px;
+}
+
+#lblLogo:hover > img {
+    animation: animBeesLogo 1s infinite;
+}
+
+#lblLogo > h1 {
+    font-size: 300%;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imgBeeBtn {
+    width: 8%;
+    position: relative;
+    animation: animBees 750ms infinite;
+}
+
+#imgBeeBtn1 {
+    transform: rotate(-45deg);
+    left: 13%;
+    top: 10%;
+}
+
+#imgBeeBtn2 {
+    transform: rotate(45deg);
+    left: -13%;
+    top: 10%;
+}
+
+@keyframes animBeesLogo {
+    0% {
+        top: -5%;
+    }
+
+    25% {
+        top: 0%;
+    }
+
+    50% {
+        top: -5%;
+    }
+
+    75% {
+        top: -10%;
+    }
+
+    100% {
+        top: -5%;
+    }
+
+}
+
+
+@keyframes animBees {
+    0% {
+        top: 10%;
+    }
+
+    25% {
+        top: 15%;
+    }
+
+    50% {
+        top: 10%;
+    }
+
+    75% {
+        top: 5%;
+    }
+
+    100% {
+        top: 10%;
+    }
+
+}
+
+#lblBtnLogin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 99vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #111;
+}
+
+#divMap {
+    border: 2px solid #fff;
+    width: 50%;
+    height: 50%;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500%;
+}
+
+#divPins {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+}
+
+.lblPin {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lblPin:hover {
+    color: #555;
+
+    .imgPin {
+        width: 4%;
+        filter: invert(75%);
+    }
+}
+
+.imgPin {
+    width: 3%;
+}
+
+
+#lblLogo {
+    position: absolute;
+
+    width: 25%;
+    height: 25%;
+
+    left: -3%;
+    top: -2.5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#lblLogo:hover > img {
+    animation: animBeesLogo 1s infinite;
+}
+
+#lblLogo>img {
+    transform: rotate(45deg);
+    width: 25%;
+    position: relative;
+    bottom: 15px;
+}
+
+#lblLogo>h1 {
+    font-size: 300%;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes animBeesLogo {
+    0% {
+        top: -5%;
+    }
+
+    25% {
+        top: 0%;
+    }
+
+    50% {
+        top: -5%;
+    }
+
+    75% {
+        top: -10%;
+    }
+
+    100% {
+        top: -5%;
+    }
+
+}
+
+#btnLoginOut {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 10%;
+    height: 5%;
+    background-color: #111;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+#btnLoginOut:hover {
+    background-color: #fff;
+    border: 2px solid #111;
+    color: #111;
+}

@@ -1,76 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    height: 99vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-
-    background-color: #111;
-}
-
-#lblLogo {
-    position: absolute;
-
-    width: 25%;
-    height: 25%;
-
-    left: -3%;
-    top: -2.5%;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row-reverse;
-    
-}
-
-#lblLogo:hover > img {
-    animation: animBeesLogo 1s infinite;
-}
-
-@keyframes animBeesLogo {
-    0% {
-        top: -5%;
-    }
-
-    25% {
-        top: 0%;
-    }
-
-    50% {
-        top: -5%;
-    }
-
-    75% {
-        top: -10%;
-    }
-
-    100% {
-        top: -5%;
-    }
-
-}
-
-
-#lblLogo>img {
-    transform: rotate(45deg);
-    width: 25%;
-    position: relative;
-    bottom: 15px;
-}
-
-#lblLogo>h1 {
-    font-size: 300%;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 @keyframes animBeesLogo {
     0% {
         top: -5%;
@@ -106,26 +33,25 @@ body {
     color: #111;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    left: -15%;
 }
 
-#divCreateAccountArea1 > * {
-    margin: 8%;
+#divCreateAccountArea1>* {
+    margin: 5%;
 }
 
-#divCreateAccountArea1 > h1 {
+#divCreateAccountArea1>h1 {
     position: relative;
     left: -10%;
     font-size: 300%;
 }
 
-#divCreateAccountArea1 > label > b {
+#divCreateAccountArea1>label>b {
     position: relative;
     left: -40%;
     font-size: 125%;
 }
 
-#divCreateAccountArea1 > label > input {
+#divCreateAccountArea1>label>input {
     width: 175%;
     height: 25px;
     position: relative;
@@ -137,7 +63,7 @@ body {
 
 }
 
-#divCreateAccountArea1 > label > input::placeholder {
+#divCreateAccountArea1>label>input::placeholder {
     color: #fff;
 }
 
@@ -148,7 +74,8 @@ body {
     flex-direction: column;
 }
 
-#btnLogin, #btnCreate {
+#btnLogin,
+#btnCreate {
     width: 90%;
     height: 40px;
     border-radius: 15px;
@@ -157,15 +84,28 @@ body {
     color: #fff;
     font-size: 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    > a {
+        color: #fff;
+    }
 }
 
-#btnLogin:hover , #btnCreate:hover {
+#btnLogin:hover,
+#btnCreate:hover {
     border: 2px solid #ccc;
     background-color: #fff;
     color: #111;
+    
+    > a {
+        color: #111;
+    }
 }
 
-#divCreateAccountArea1, #divCreateAccountArea2 {
+#divCreateAccountArea1,
+#divCreateAccountArea2 {
     display: flex;
     justify-content: center;
     align-items: center;

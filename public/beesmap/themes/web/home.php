@@ -1,56 +1,42 @@
 <?php
-    // session_start();
-    // if (!$_SESSION["login"]) {
-    //     header("Location: http://localhost:9010/beesmap/login");
-    // }
+echo $this->layout("_theme");
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" href="assets/web/css/style-home.css">
+<script src="assets/web/js/script-home.js" async></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/web/css/style-home.css">
-    <script src="assets/web/js/script-home.js" async></script>
-</head>
-
-<body>
-    <label id="lblLogo">
-        <h1>BeesMap</h1>
-        <img src="assets/imgs/bee.png" alt="bee">
-    </label>
-    <div id="divMap">
-        <h1><b>
-                Mapa
-            </b></h1>
-    </div>
-    <div id="divPins">
-        <label class="lblPin">
-            <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
-            <b>
-                Pin 1 - Brasil, RS, Chaqueadas
-            </b>
-        </label>
-        <label class="lblPin">
-            <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
-            <b>
-                Pin 2 - USA, New York, New York
-            </b>
-        </label>
-        <label class="lblPin">
-            <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
-            <b>
-                Pin 3 - Russia, Moscou
-            </b>
-        </label>
-    </div>
-    <button id="btnLoginOut">
+<div id="divMap">
+    <h1><b>
+            Mapa
+        </b></h1>
+</div>
+<div id="divPins">
+    <label class="lblPin">
+        <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
         <b>
-            Deslogar
+            Pin 1 - Brasil, RS, Chaqueadas
         </b>
-    </button>
-</body>
-
-</html>
+    </label>
+    <label class="lblPin">
+        <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
+        <b>
+            Pin 2 - USA, New York, New York
+        </b>
+    </label>
+    <label class="lblPin">
+        <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
+        <b>
+            Pin 3 - Russia, Moscou
+        </b>
+    </label>
+</div>
+<a id="btnLoginOut" href="<?= url("login") ?>">
+    <b>
+        Deslogar
+    </b>
+</a>
+<a id="btnFaqs" href="<?= url("perguntas") ?>">
+    <b>
+        Perguntas frequentes
+    </b>
+</a>

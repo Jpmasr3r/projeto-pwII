@@ -29,6 +29,11 @@ public function __construct()
         echo $this->view->render("createAccount",[]);
     }
 
+    public function faq() : void 
+    {
+        echo $this->view->render("faq",[]);
+    }
+
     public function error (array $data)
     {
         var_dump($data);

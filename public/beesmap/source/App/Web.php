@@ -24,14 +24,24 @@ public function __construct()
         echo $this->view->render("login",[]);
     }
 
-    public function create() : void 
+    public function register() : void 
     {
-        echo $this->view->render("createAccount",[]);
+        echo $this->view->render("register",[]);
     }
 
     public function faq() : void 
     {
         echo $this->view->render("faq",[]);
+    }
+
+    public function contact() : void 
+    {
+        echo $this->view->render("contact",[]);
+    }
+
+    public function about() : void 
+    {
+        echo $this->view->render("about",[]);
     }
 
     public function error (array $data)

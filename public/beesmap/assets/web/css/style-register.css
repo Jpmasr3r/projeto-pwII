@@ -21,10 +21,10 @@
 
 }
 
-#divCreateAccount {
+#divRegister {
     min-width: 50%;
     min-height: 50%;
-    background-color: #fff;
+    background-color: #a2a800;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -35,36 +35,48 @@
     position: relative;
 }
 
-#divCreateAccountArea1>* {
+#divRegisterArea1>* {
     margin: 5%;
 }
 
-#divCreateAccountArea1>h1 {
+#divRegisterArea1>h1 {
     position: relative;
     left: -10%;
     font-size: 300%;
 }
 
-#divCreateAccountArea1>label>b {
+#divRegisterArea1>label>b {
     position: relative;
     left: -40%;
     font-size: 125%;
 }
 
-#divCreateAccountArea1>label>input {
+#divRegisterArea1>label>input {
     width: 175%;
     height: 25px;
     position: relative;
     left: -40%;
     border-radius: 0px 15px 15px 0px;
-    border: 2px solid #444;
+    border: none;
     background-color: #111;
-    color: #fff;
+    color: #ffff00;
 
 }
 
-#divCreateAccountArea1>label>input::placeholder {
-    color: #fff;
+#divRegisterArea1>label>input:focus {
+    background-color: #ffff00;
+    color: #111;
+}
+
+#divRegisterArea1>label>input::placeholder {
+    color: #111;
+    font-weight: bold;
+}
+
+#divRegisterArea1>label>input::placeholder {
+    font-weight: bold;
+    color: #ffff00;
+    padding: 5px;
 }
 
 .lblInpCreate {
@@ -79,33 +91,33 @@
     width: 90%;
     height: 40px;
     border-radius: 15px;
-    border: 2px solid #444;
+    border: none;
     background-color: #111;
-    color: #fff;
+    color: #ffff00;
     font-size: 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    > a {
-        color: #fff;
+
+    >a {
+        color: #ffff00;
     }
+
 }
 
 #btnLogin:hover,
 #btnCreate:hover {
-    border: 2px solid #ccc;
-    background-color: #fff;
+    background-color: #ffff00;
     color: #111;
-    
-    > a {
+
+    >a {
         color: #111;
     }
 }
 
-#divCreateAccountArea1,
-#divCreateAccountArea2 {
+#divRegisterArea1,
+#divRegisterArea2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,8 +127,8 @@
     height: 100%;
 }
 
-#divCreateAccountArea2 {
-    background-color: #dedede;
+#divRegisterArea2 {
+    background-color: #737d00;
 }
 
 .imgBeeBtn {

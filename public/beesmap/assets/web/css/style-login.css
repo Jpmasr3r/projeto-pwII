@@ -1,7 +1,7 @@
 #divLogin {
     min-width: 50%;
     min-height: 50%;
-    background-color: #fff;
+    background-color: #a2a800;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -33,14 +33,26 @@
     position: relative;
     left: -40%;
     border-radius: 0px 15px 15px 0px;
-    border: 2px solid #444;
+    border: none;
     background-color: #111;
-    color: #fff;
+    color: #ffff00;
 
 }
 
+#divLoginArea1>label>input:focus {
+    background-color: #ffff00;
+    color: #111;
+}
+
+#divLoginArea1>label>input:focus::placeholder {
+    color: #111;
+    font-weight: bold;
+}
+
 #divLoginArea1>label>input::placeholder {
-    color: #fff;
+    font-weight: bold;
+    color: #ffff00;
+    padding: 5px;
 }
 
 .lblInpLogin {
@@ -55,9 +67,9 @@
     width: 90%;
     height: 40px;
     border-radius: 15px;
-    border: 2px solid #444;
+    border: none;
     background-color: #111;
-    color: #fff;
+    color: #ffff00;
     font-size: 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
@@ -65,15 +77,14 @@
     align-items: center;
 
     >a {
-        color: #fff;
+        color: #ffff00;
     }
 
 }
 
 #btnLogin:hover,
 #btnCreate:hover {
-    border: 2px solid #ccc;
-    background-color: #fff;
+    background-color: #ffff00;
     color: #111;
 
     >a {
@@ -93,7 +104,7 @@
 }
 
 #divLoginArea2 {
-    background-color: #dedede;
+    background-color: #737d00;
 }
 
 .imgBeeBtn {

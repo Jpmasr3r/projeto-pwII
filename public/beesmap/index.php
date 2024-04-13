@@ -14,8 +14,10 @@ $route->group(null);
 
 $route->get("/", "Web:home");
 $route->get("/login", "Web:login");
-$route->get("/inscricao", "Web:create");
+$route->get("/registrar", "Web:register");
 $route->get("/perguntas", "Web:faq");
+$route->get("/contato", "Web:contact");
+$route->get("/sobre", "Web:about");
 
 $route->get("/ops/{errcode}", "Web:error");
 
@@ -28,3 +30,5 @@ if ($route->error()) {
 }
 
 ob_end_flush();
+
+session_start();

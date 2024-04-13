@@ -1,4 +1,5 @@
 <?php
+$_SESSION["user"] = "";
 echo $this->layout("_theme");
 ?>
 
@@ -42,8 +43,3 @@ echo $this->layout("_theme");
         </label>
     </i>
 </div>
-<a id="btnBack" href="<?= url("") ?>">
-    <b>
-        Voltar
-    </b>
-</a>

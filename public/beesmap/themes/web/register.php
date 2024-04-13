@@ -1,12 +1,13 @@
 <?php
+$_SESSION["user"] = "";
 echo $this->layout("_theme");
 ?>
 
-<link rel="stylesheet" href="assets/web/css/style-createAccount.css">
-<script src="assets/web/js/script-createAccount.js" async></script>
+<link rel="stylesheet" href="assets/web/css/style-register.css">
+<script src="assets/web/js/script-register.js" async></script>
 
-<div id="divCreateAccount">
-    <div id="divCreateAccountArea1">
+<div id="divRegister">
+    <div id="divRegisterArea1">
         <h1>Inscrição</h1>
         <label class="lblInpCreate">
             <b>Nome</b>
@@ -28,7 +29,7 @@ echo $this->layout("_theme");
             <img src="assets/imgs/bee2.png" class="imgBeeBtn" id="imgBeeBtn2">
         </label>
     </div>
-    <div id="divCreateAccountArea2">
+    <div id="divRegisterArea2">
         <a id="btnLogin" href="<?= url("login") ?>">
             <label>Fazer login</label>
         </a>

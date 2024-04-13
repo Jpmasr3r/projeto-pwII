@@ -1,9 +1,8 @@
 #divMap {
-    border: 2px solid #fff;
-    width: 50%;
-    height: 50%;
-    color: #fff;
-
+    border: 2px solid #111;
+    width: 75%;
+    height: 75%;
+    color: #111;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +14,16 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    color: #fff;
+    color: #111;
+}
+
+#divPins > div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
 }
 
 .lblPin {
@@ -24,14 +32,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    .imgPin {
+        filter: invert(100%);
+    }
 }
 
 .lblPin:hover {
-    color: #555;
+    color: #fff;
 
     .imgPin {
-        width: 4%;
-        filter: invert(75%);
+        filter: invert(0%);
     }
 }
 
@@ -47,17 +57,19 @@
     width: 10%;
     height: 5%;
     background-color: #111;
-    border: 2px solid #fff;
-    color: #fff;
+    border: none;
+    color: #ffff00;
     font-family: 'Courier New', Courier, monospace;
     font-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 
     >b>a {
-        color: #fff;
+        color: #ffff00;
     }
+
 
     
 }
@@ -75,8 +87,7 @@
 
 #btnLoginOut:hover,
 #btnFaqs:hover {
-    background-color: #fff;
-    border: 2px solid #111;
+    background-color: #ffff00;
     color: #111;
 
     >b>a {

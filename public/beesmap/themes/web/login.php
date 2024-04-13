@@ -1,5 +1,7 @@
 <?php
+$_SESSION["user"] = "";
 echo $this->layout("_theme");
+
 ?>
 
 <link rel="stylesheet" href="assets/web/css/style-login.css">
@@ -25,7 +27,7 @@ echo $this->layout("_theme");
         </label>
     </div>
     <div id="divLoginArea2">
-        <a id="btnCreate" href="<?= url("inscricao"); ?>">
+        <a id="btnCreate" href="<?= url("registrar"); ?>">
             <label>
             Criar conta
             </label>

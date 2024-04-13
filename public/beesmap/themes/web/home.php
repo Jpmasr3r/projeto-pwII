@@ -1,4 +1,5 @@
 <?php
+$_SESSION["user"] = "user1";
 echo $this->layout("_theme");
 ?>
 
@@ -11,32 +12,85 @@ echo $this->layout("_theme");
         </b></h1>
 </div>
 <div id="divPins">
-    <label class="lblPin">
-        <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
-        <b>
-            Pin 1 - Brasil, RS, Chaqueadas
-        </b>
-    </label>
-    <label class="lblPin">
-        <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
-        <b>
-            Pin 2 - USA, New York, New York
-        </b>
-    </label>
-    <label class="lblPin">
-        <img src="assets/imgs/pin.png" alt="pin" class="imgPin">
-        <b>
-            Pin 3 - Russia, Moscou
-        </b>
-    </label>
+    <div>
+        <label class="lblPin">
+            <b>
+                Pin 1 - Brasil, RS, Chaqueadas
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 2 - USA, New York, New York
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 3 - Russia, Moscou
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 2 - USA, New York, New York
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 3 - Russia, Moscou
+            </b>
+        </label>
+    </div>
+    <div>
+        <label class="lblPin">
+            <b>
+                Pin 1 - Brasil, RS, Chaqueadas
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 2 - USA, New York, New York
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 3 - Russia, Moscou
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 2 - USA, New York, New York
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 3 - Russia, Moscou
+            </b>
+        </label>
+    </div>
+    <div>
+        <label class="lblPin">
+            <b>
+                Pin 1 - Brasil, RS, Chaqueadas
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 2 - USA, New York, New York
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 3 - Russia, Moscou
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 2 - USA, New York, New York
+            </b>
+        </label>
+        <label class="lblPin">
+            <b>
+                Pin 3 - Russia, Moscou
+            </b>
+        </label>
+    </div>
 </div>
-<a id="btnLoginOut" href="<?= url("login") ?>">
-    <b>
-        Deslogar
-    </b>
-</a>
-<a id="btnFaqs" href="<?= url("perguntas") ?>">
-    <b>
-        Perguntas frequentes
-    </b>
-</a>

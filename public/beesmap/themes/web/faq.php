@@ -1,12 +1,11 @@
 <?php
-$_SESSION["user"] = "";
 echo $this->layout("_theme");
 ?>
 
 <link rel="stylesheet" href="assets/web/css/style-faq.css">
 <script src="assets/web/js/script-faqs.js" async></script>
 
-<h1 id="h1FaqTitle">
+<h1 id="title">
     <b>
         <u>
             Perguntas frequentes

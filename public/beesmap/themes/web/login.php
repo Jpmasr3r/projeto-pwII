@@ -1,7 +1,5 @@
 <?php
-$_SESSION["user"] = "";
 echo $this->layout("_theme");
-
 ?>
 
 <link rel="stylesheet" href="assets/web/css/style-login.css">

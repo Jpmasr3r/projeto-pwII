@@ -16,15 +16,12 @@
             </a>
         </label>
         <h1>|</h1>
-        <?php
-        if ($_SESSION["user"]) {
-            echo "<label><a href=" . url("login") . ">Deslogar</a></label> <h1>|</h1>";
-        }
-
-        ?>
-
         <label>
-            <a href="<?= url("") ?>">Home</a>
+            <a href="<?= url("login") ?>">Deslogar</a>
+        </label>
+        <h1>|</h1>
+        <label>
+            <a href="<?= url("") ?>">Inicio</a>
         </label>
         <h1>|</h1>
         <label>
@@ -43,7 +40,7 @@
     echo $this->section("content");
     ?>
     <footer>
-        <h1>All directs Reserved</h1>
+        <h1>2024 - João Pedro Anjolim Soares</h1>
     </footer>
 </body>
 

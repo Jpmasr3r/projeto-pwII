@@ -18,6 +18,7 @@ $route->get("/registrar", "Web:register");
 $route->get("/perguntas", "Web:faq");
 $route->get("/contato", "Web:contact");
 $route->get("/sobre", "Web:about");
+$route->get("/mapa", "Web:map");
 
 $route->get("/ops/{errcode}", "Web:error");
 
@@ -30,5 +31,3 @@ if ($route->error()) {
 }
 
 ob_end_flush();
-
-session_start();

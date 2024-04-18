@@ -44,6 +44,11 @@ public function __construct()
         echo $this->view->render("about",[]);
     }
 
+    public function map() : void 
+    {
+        echo $this->view->render("map",[]);
+    }
+
     public function error (array $data)
     {
         var_dump($data);
